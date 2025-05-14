@@ -118,9 +118,9 @@ def process_file(contents, filename):
             for record in records:
                 for feature in record.features:
                     if feature.type == "CDS":
-                    gene_list += feature.qualifiers.get("gene", []) + \
-                                 feature.qualifiers.get("product", []) + \
-                                 feature.qualifiers.get("note", [])
+                        gene_list += feature.qualifiers.get("gene", []) + \
+                                     feature.qualifiers.get("product", []) + \
+                                     feature.qualifiers.get("note", [])
         elif ext == "json":
             gene_list = parse_antismash_json(decoded.decode("utf-8"))
 
@@ -219,5 +219,5 @@ def download_pdf(n, traits, score):
 if __name__ == "__main__":
     import os
     print("🚀 DairyBioControl is running...")
-    app.run_server(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
