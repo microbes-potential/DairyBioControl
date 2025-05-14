@@ -33,7 +33,7 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col(html.H2("DairyBioControl", className="text-primary")),
         dbc.Col(html.Div([
-            html.Img(src="/assets/Prof.PNG", style={"height": "50px", "marginRight": "10px", "borderRadius": "50%"}),
+            html.Img(src="/assets/Prof.png", style={"height": "50px", "marginRight": "10px", "borderRadius": "50%"}),
             html.Div("LaPointes Research Group", style={"fontSize": "14px", "color": "gray"})
         ], style={"display": "flex", "alignItems": "center", "justifyContent": "flex-end"}),
             style={"marginLeft": "auto", "paddingTop": "18px"})
