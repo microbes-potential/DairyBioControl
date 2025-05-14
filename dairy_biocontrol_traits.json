@@ -1,0 +1,73 @@
+[
+    {
+        "category": "Antibacterial",
+        "trait": "Nisin/Subtilin Production",
+        "keywords": [
+            "nisin",
+            "lantibiotic",
+            "subtilin",
+            "bacteriocin"
+        ],
+        "reference_genes": [
+            "nisA",
+            "nisB",
+            "nisC",
+            "spaS"
+        ]
+    },
+    {
+        "category": "Antifungal",
+        "trait": "Chitinase Activity",
+        "keywords": [
+            "chitinase",
+            "chitA",
+            "ech42"
+        ],
+        "reference_genes": [
+            "chiA",
+            "chiB"
+        ]
+    },
+    {
+        "category": "Iron Competition",
+        "trait": "Siderophore Production (e.g. Bacillibactin)",
+        "keywords": [
+            "siderophore",
+            "enterobactin",
+            "pyoverdine",
+            "bacillibactin"
+        ],
+        "reference_genes": [
+            "entA",
+            "pvdA",
+            "dhbF"
+        ]
+    },
+    {
+        "category": "Phage Defense",
+        "trait": "CRISPR-Cas Systems",
+        "keywords": [
+            "crispr",
+            "cas9",
+            "cas3"
+        ],
+        "reference_genes": [
+            "cas1",
+            "cas2",
+            "cas9"
+        ]
+    },
+    {
+        "category": "Biofilm Control",
+        "trait": "Quorum Sensing Inhibition",
+        "keywords": [
+            "quorum sensing",
+            "luxR",
+            "autoinducer"
+        ],
+        "reference_genes": [
+            "luxS",
+            "aiiA"
+        ]
+    }
+]

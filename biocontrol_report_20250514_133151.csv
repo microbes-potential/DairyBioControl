@@ -1,0 +1,6 @@
+category,trait,hits,score,status
+Antibacterial,Nisin/Subtilin Production,9,3,Detected
+Antifungal,Chitinase Activity,1,1,Detected
+Iron Competition,Siderophore Production (e.g. Bacillibactin),0,0,Not Detected
+Phage Defense,CRISPR-Cas Systems,0,0,Not Detected
+Biofilm Control,Quorum Sensing Inhibition,0,0,Not Detected
