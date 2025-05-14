@@ -33,7 +33,7 @@ app.layout = dbc.Container([
     dbc.Row([
         dbc.Col(html.H2("DairyBioControl", className="text-primary")),
         dbc.Col(html.Div([
-            html.Img(src="/assets/Prof.png", style={"height": "50px", "marginRight": "10px", "borderRadius": "50%"}),
+            html.Img(src="/assets/Prof.PNG", style={"height": "50px", "marginRight": "10px", "borderRadius": "50%"}),
             html.Div("LaPointes Research Group", style={"fontSize": "14px", "color": "gray"})
         ], style={"display": "flex", "alignItems": "center", "justifyContent": "flex-end"}),
             style={"marginLeft": "auto", "paddingTop": "18px"})
@@ -114,9 +114,10 @@ def process_file(contents, filename):
             df = pd.read_csv(io.StringIO(decoded.decode("utf-8")))
             gene_list = df.columns.tolist() + df.get("product", pd.Series()).dropna().tolist()
         elif ext in ["gbk", "gbff"]:
-            record = SeqIO.read(io.StringIO(decoded.decode("utf-8")), "genbank")
-            for feature in record.features:
-                if feature.type == "CDS":
+            records = list(SeqIO.parse(io.StringIO(decoded.decode("utf-8")), "genbank"))
+            for record in records:
+                for feature in record.features:
+                    if feature.type == "CDS":
                     gene_list += feature.qualifiers.get("gene", []) + \
                                  feature.qualifiers.get("product", []) + \
                                  feature.qualifiers.get("note", [])
@@ -218,5 +219,5 @@ def download_pdf(n, traits, score):
 if __name__ == "__main__":
     import os
     print("🚀 DairyBioControl is running...")
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    app.run_server(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
 
