@@ -50,7 +50,7 @@ def page_home():
         # Why it matters
         html.Div(
             [
-                html.H2("🧠 Singnificance", style={"marginTop": "10px", "color": "#205375"}),
+                html.H2("🧠 Significance", style={"marginTop": "10px", "color": "#205375"}),
                 html.P(
                     "Microbial biocontrol offers a natural approach to protect dairy products such as "
                     "cheese, yogurt, and kefir from spoilage bacteria and fungi.",
