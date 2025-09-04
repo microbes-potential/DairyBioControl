@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "adeelfarooq12@jejunu.ac.kr",
+      "name": "adeel",
+      "approved": true,
+      "role": "user"
+    },
+    {
+      "email": "jhwanj9@gmail.com",
+      "name": "asad",
+      "approved": true,
+      "role": "user"
+    },
+    {
+      "email": "mahadsway@gmail.com",
+      "name": "mahad",
+      "approved": false,
+      "role": "user"
+    },
+    {
+      "email": "unnot517@gmail.com",
+      "name": "unno",
+      "approved": true,
+      "role": "user"
+    },
+    {
+      "email": "adeelsway@gmail.com",
+      "name": "adeel",
+      "approved": false,
+      "role": "user"
+    },
+    {
+      "email": "jhwaj9@gmail.com",
+      "name": "adeel",
+      "approved": false,
+      "role": "user"
+    }
+  ]
+}

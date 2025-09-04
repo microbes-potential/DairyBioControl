@@ -1,0 +1,598 @@
+Gene,Product,Category,Tier
+nisA,Nisin structural peptide (lantibiotic core),Bacteriocins,core
+nisZ,Nisin Z structural variant,Bacteriocins,supportive
+nisB,Dehydratase (post-translational modification),Bacteriocins,supportive
+nisC,Cyclase/thioether ring formation enzyme,Bacteriocins,supportive
+nisT,ABC exporter for nisin prepeptide,Bacteriocins,core
+nisP,Leader peptidase/protease (maturation),Bacteriocins,supportive
+nisI,Immunity lipoprotein,Bacteriocins,core
+nisF,ABC immunity transporter ATP-binding subunit,Bacteriocins,core
+nisE,ABC immunity transporter permease,Bacteriocins,core
+nisG,ABC immunity transporter permease,Bacteriocins,core
+nisR,Response regulator (two-component regulation),Bacteriocins,supportive
+nisK,Sensor kinase (two-component regulation),Bacteriocins,supportive
+spaS,Subtilin structural peptide,Bacteriocins,core
+spaB,Lan modification enzyme,Bacteriocins,supportive
+spaC,Lan modification enzyme,Bacteriocins,supportive
+spaT,ABC transporter,Bacteriocins,contextual
+spaI,Immunity protein,Bacteriocins,core
+spaR,Response regulator,Bacteriocins,supportive
+spaK,Sensor kinase,Bacteriocins,supportive
+epiA,Epidermin structural peptide,Bacteriocins,core
+epiB,Dehydratase,Bacteriocins,supportive
+epiC,Cyclase,Bacteriocins,supportive
+epiD,Decarboxylase for AviCys formation,Bacteriocins,supportive
+epiP,Leader peptidase,Bacteriocins,supportive
+epiQ,Transcriptional regulator,Bacteriocins,supportive
+gdmA,Gallidermin structural peptide,Bacteriocins,core
+mrsA,Mersacidin structural peptide,Bacteriocins,core
+mrsB,Lan modification enzyme,Bacteriocins,supportive
+mrsC,Lan modification enzyme,Bacteriocins,supportive
+mrsD,Decarboxylase (AviCys),Bacteriocins,supportive
+mrsT,ABC exporter,Bacteriocins,core
+mrsR,Response regulator,Bacteriocins,supportive
+mrsK,Sensor kinase,Bacteriocins,supportive
+mrsE,Immunity ABC ATP-binding,Bacteriocins,core
+mrsF,Immunity ABC permease,Bacteriocins,core
+mrsG,Immunity ABC permease,Bacteriocins,core
+ltnA1,Lacticin 3147 structural peptide A1,Bacteriocins,core
+ltnA2,Lacticin 3147 structural peptide A2,Bacteriocins,core
+ltnB,LanB-like modification enzyme,Bacteriocins,supportive
+ltnC,LanC-like modification enzyme,Bacteriocins,supportive
+ltnD,Protease/processing enzyme,Bacteriocins,supportive
+ltnT,ABC transporter,Bacteriocins,contextual
+ltnI,Immunity protein,Bacteriocins,core
+lctA,Lacticin 481 structural peptide,Bacteriocins,core
+lctM,LanM modification enzyme,Bacteriocins,supportive
+lctT,ABC exporter,Bacteriocins,core
+lctE,Immunity protein,Bacteriocins,core
+lctF,Immunity protein,Bacteriocins,core
+nukA,Nukacin structural peptide,Bacteriocins,core
+nukM,LanM modification enzyme,Bacteriocins,supportive
+nukT,ABC exporter,Bacteriocins,core
+nukF,Immunity protein,Bacteriocins,core
+nukE,Immunity protein,Bacteriocins,core
+plnE,Plantaricin E structural peptide (two-peptide bacteriocin),Bacteriocins,core
+plnF,Plantaricin F structural peptide,Bacteriocins,core
+plnJ,Plantaricin J structural peptide,Bacteriocins,core
+plnK,Plantaricin K structural peptide,Bacteriocins,core
+plnG,ABC transporter,Bacteriocins,contextual
+plnN,Immunity protein,Bacteriocins,core
+plnO,Immunity protein,Bacteriocins,core
+plnABCD,Two-component regulation locus (promoter/regulator),Bacteriocins,supportive
+pedA,Pediocin structural peptide,Bacteriocins,core
+pedB,Immunity protein,Bacteriocins,core
+pedC,Accessory protein (export/maturation),Bacteriocins,contextual
+pedD,ABC exporter,Bacteriocins,core
+entA,Enterocin A structural peptide,Bacteriocins,core
+entB,Enterocin B structural peptide,Bacteriocins,core
+entK,Enterocin K structural peptide,Bacteriocins,core
+entP,Enterocin P structural peptide,Bacteriocins,core
+entI,Immunity protein,Bacteriocins,core
+entF,ABC transporter ATPase,Bacteriocins,contextual
+sakA,Sakacin structural peptide,Bacteriocins,core
+sakT,Transporter (ABC),Bacteriocins,contextual
+sakI,Immunity protein,Bacteriocins,core
+sapA,Sakacin P structural peptide,Bacteriocins,core
+sapB,Immunity protein (sakacin P),Bacteriocins,core
+sapT,ABC exporter (sakacin P),Bacteriocins,core
+lcnA,Leucocin A structural peptide,Bacteriocins,core
+lcnB,Immunity protein,Bacteriocins,core
+lcnC,ABC transporter,Bacteriocins,contextual
+lcnD,Accessory/export,Bacteriocins,contextual
+curA,Curvacin A structural peptide,Bacteriocins,core
+curB,Immunity protein,Bacteriocins,core
+curC,ABC exporter,Bacteriocins,core
+cbnA,Carnobacteriocin structural peptide,Bacteriocins,core
+cbnB,Carnobacteriocin structural peptide,Bacteriocins,core
+cbnC,Carnobacteriocin structural peptide,Bacteriocins,core
+cbnI,Immunity protein,Bacteriocins,core
+cbnT,ABC transporter,Bacteriocins,contextual
+thuA,Thuricin structural peptide,Bacteriocins,core
+thuB,Thuricin structural peptide,Bacteriocins,core
+ttsB,ABC exporter (thuricin),Bacteriocins,core
+ttsI,Immunity protein (thuricin),Bacteriocins,core
+sboA,Subtilosin A structural peptide,Bacteriocins,core
+albA,Immunity protein (subtilosin),Bacteriocins,core
+albB,Processing enzyme,Bacteriocins,supportive
+albC,Modification enzyme,Bacteriocins,supportive
+albD,Modification enzyme,Bacteriocins,supportive
+albE,ABC exporter ATPase,Bacteriocins,core
+albF,ABC exporter permease,Bacteriocins,core
+albG,Immunity protein,Bacteriocins,core
+as-48A,AS-48 structural peptide (circular bacteriocin),Bacteriocins,core
+as-48B,Transport/immunity accessory,Bacteriocins,core
+as-48C,Transport/immunity accessory,Bacteriocins,core
+as-48D1,Immunity protein,Bacteriocins,core
+as-48D2,Immunity protein,Bacteriocins,core
+as-48E,ABC exporter ATPase,Bacteriocins,core
+as-48F,ABC exporter permease,Bacteriocins,core
+as-48G,Accessory protein,Bacteriocins,contextual
+as-48H,Accessory protein,Bacteriocins,contextual
+cea,Colicin structural gene (generic),Bacteriocins,supportive
+cei,Colicin immunity protein,Bacteriocins,core
+cel,Colicin lysis/release protein,Bacteriocins,supportive
+cbrA,Colicin B receptor (OM; TonB-dependent),Bacteriocins,supportive
+cirA,Catecholate siderophore/colicin I receptor (OM),Bacteriocins,supportive
+ompF,Outer membrane porin used by colicins (receptor),Bacteriocins,supportive
+tolQ,Inner membrane energization (colicin translocation),Bacteriocins,supportive
+tolR,Inner membrane energization,Bacteriocins,supportive
+tolA,Periplasmic translocation component,Bacteriocins,supportive
+tolB,Periplasmic translocation component,Bacteriocins,supportive
+pal,Peptidoglycan-associated lipoprotein,Bacteriocins,supportive
+lexA,SOS repressor (promoter/regulator of colicin operons),Bacteriocins,supportive
+recA,SOS activator (LexA autocleavage; colicin induction),Bacteriocins,supportive
+mcbA,Microcin B17 precursor peptide,Bacteriocins,supportive
+mcbB,Microcin B17 modifying enzyme,Bacteriocins,supportive
+mcbC,Microcin B17 modifying enzyme,Bacteriocins,supportive
+mcbD,Microcin B17 modifying enzyme,Bacteriocins,supportive
+mcbE,ABC exporter ATPase,Bacteriocins,core
+mcbF,ABC exporter membrane subunit,Bacteriocins,core
+mcbG,Immunity protein,Bacteriocins,core
+mcjA,Microcin J25 precursor peptide (lasso peptide),Bacteriocins,supportive
+mcjB,Processing enzyme,Bacteriocins,supportive
+mcjC,Cyclase,Bacteriocins,supportive
+mcjD,ABC exporter,Bacteriocins,core
+mchB,Microcin H47 biosynthesis,Bacteriocins,supportive
+mchC,Microcin H47 biosynthesis,Bacteriocins,supportive
+mchF,Microcin H47 exporter (ABC),Bacteriocins,supportive
+mcmA,Microcin M biosynthesis,Bacteriocins,supportive
+mcmB,Microcin M biosynthesis,Bacteriocins,supportive
+mcmC,Microcin M biosynthesis,Bacteriocins,supportive
+mccA,Microcin C precursor peptide,Bacteriocins,supportive
+mccB,Adenylyltransferase (maturation),Bacteriocins,supportive
+mccC,Peptidase (processing),Bacteriocins,supportive
+mccD,Immunity factor,Bacteriocins,core
+mccE,Acetyltransferase immunity,Bacteriocins,core
+mccF,Peptidase immunity,Bacteriocins,core
+mceA,Microcin E492 structural peptide,Bacteriocins,core
+mceB,Immunity/processing,Bacteriocins,core
+mceC,Modification enzyme,Bacteriocins,supportive
+mceD,Membrane accessory,Bacteriocins,contextual
+mceE,Transport accessory,Bacteriocins,contextual
+mceF,ABC exporter,Bacteriocins,core
+mceG,Immunity protein,Bacteriocins,core
+mutA,Mutacin structural peptide,Bacteriocins,core
+mutM,LanM modification enzyme (mutacin),Bacteriocins,supportive
+mutT,ABC transporter (mutacin),Bacteriocins,contextual
+mutI,Immunity protein (mutacin),Bacteriocins,core
+grsA,NRPS adenylation module (gramicidin S),Bacteriocins,supportive
+grsB,NRPS condensation/thiolation (gramicidin S),Bacteriocins,supportive
+tycA,NRPS (tyrocidine/gramicidin synthesis),Bacteriocins,supportive
+tycB,NRPS (tyrocidine),Bacteriocins,supportive
+tycC,NRPS (tyrocidine),Bacteriocins,supportive
+bacA,Bacilysin biosynthesis enzyme,Bacteriocins,supportive
+bacB,Bacilysin biosynthesis enzyme,Bacteriocins,supportive
+bacC,Bacilysin biosynthesis enzyme,Bacteriocins,supportive
+bacD,Bacilysin biosynthesis enzyme,Bacteriocins,supportive
+bacE,Bacilysin exporter,Bacteriocins,supportive
+plnR,Transcriptional regulator of plantaricin,Bacteriocins,supportive
+blpR,"Response regulator (bacteriocin locus, Streptococcus)",Bacteriocins,supportive
+blpH,"Sensor kinase (bacteriocin locus, Streptococcus)",Bacteriocins,supportive
+comDE,Competence/bacteriocin regulation (two-component),Bacteriocins,supportive
+tssA,Baseplate assembly protein TssA (core),T6SS,core
+tssB,Sheath protein VipA/VasA (core),T6SS,core
+tssC,Sheath protein VipB/VasB (core),T6SS,core
+tssD,Hcp tube protein (core),T6SS,core
+hcp,Hcp tube protein (alias of TssD),T6SS,supportive
+tssE,Baseplate wedge component (core),T6SS,core
+tssF,Baseplate component (core),T6SS,core
+tssG,Baseplate component (core),T6SS,core
+tssH,AAA+ ATPase ClpV (sheath recycling; core),T6SS,core
+clpV,AAA+ ATPase (T6SS sheath disassembly),T6SS,supportive
+tssI,VgrG trimeric spike protein (core),T6SS,core
+vgrG,Trimeric spike protein (alias of TssI),T6SS,supportive
+tssJ,Outer membrane lipoprotein (core),T6SS,core
+tssK,Baseplate/core component,T6SS,core
+tssL,Inner membrane protein (core),T6SS,core
+tssM,Inner membrane protein IcmF-like (core),T6SS,core
+icmF,IcmF-like membrane protein (alias of TssM; core),T6SS,core
+dotU,DotU-like inner membrane anchor (core),T6SS,core
+paar,PAAR repeat-containing tip protein (spike adaptor),T6SS,supportive
+impA,T6SS core component (synonym system imp/sci),T6SS,core
+impB,T6SS core component (imp/sci),T6SS,core
+impC,T6SS core component (imp/sci),T6SS,core
+impD,T6SS core component (imp/sci),T6SS,core
+impE,T6SS core component (imp/sci),T6SS,core
+impF,T6SS core component (imp/sci),T6SS,core
+impG,T6SS core component (imp/sci),T6SS,core
+impH,T6SS core component (imp/sci),T6SS,core
+impI,T6SS core component (imp/sci),T6SS,core
+impJ,T6SS core component (imp/sci),T6SS,core
+impK,T6SS core component (imp/sci),T6SS,core
+impL,T6SS core component (imp/sci),T6SS,core
+impM,T6SS core component (imp/sci),T6SS,core
+hsiA1,VipA homolog (H1-T6SS core),T6SS,core
+hsiB1,VipB homolog (H1-T6SS core),T6SS,core
+hcp1,Hcp (H1-T6SS),T6SS,supportive
+vgrG1,VgrG (H1-T6SS),T6SS,supportive
+icmF1,IcmF-like (H1-T6SS),T6SS,supportive
+dotU1,DotU-like (H1-T6SS),T6SS,supportive
+tse1,Periplasmic amidase effector (peptidoglycan hydrolase),T6SS,supportive
+tsi1,Immunity protein to Tse1,T6SS,core
+tse2,Cytotoxic effector (toxin),T6SS,supportive
+tsi2,Immunity protein to Tse2,T6SS,core
+tse3,Muramidase effector,T6SS,supportive
+tsi3,Immunity protein to Tse3,T6SS,core
+tse4,Cell wall-degrading effector,T6SS,supportive
+tsi4,Immunity protein to Tse4,T6SS,core
+tse5,Membrane-disrupting effector,T6SS,supportive
+tsi5,Immunity protein to Tse5,T6SS,core
+tae1,Type VI amidase effector (EI pair),T6SS,supportive
+tai1,Immunity protein to Tae1,T6SS,core
+tae2,Type VI amidase effector,T6SS,supportive
+tai2,Immunity protein to Tae2,T6SS,core
+tae3,Type VI amidase effector,T6SS,supportive
+tai3,Immunity protein to Tae3,T6SS,core
+tle1,Type VI lipase effector,T6SS,supportive
+tli1,Immunity protein to Tle1,T6SS,core
+tle2,Type VI lipase/phospholipase effector,T6SS,supportive
+tli2,Immunity protein to Tle2,T6SS,core
+tde1,Type VI DNase effector,T6SS,supportive
+tdi1,Immunity protein to Tde1,T6SS,core
+rhs,Rhs repeat-effectors (toxin-loaded tips),T6SS,supportive
+eagR,Effector chaperone/adaptor (Tap),T6SS,supportive
+tap,Accessory chaperone/adaptor for effectors,T6SS,contextual
+ppkA,Ser/Thr kinase activating T6SS (phosphorelay),T6SS,supportive
+pppA,Phosphatase counteracting PpkA,T6SS,supportive
+fha1,Forkhead-associated scaffold protein,T6SS,supportive
+fha2,FHA domain scaffold (paralog),T6SS,supportive
+tagF,Negative regulator of T6SS firing,T6SS,supportive
+tagQ,OM lipoprotein (envelope checkpoint),T6SS,supportive
+tagR,Periplasmic regulator (envelope checkpoint),T6SS,supportive
+tagS,IM ABC-like activator (envelope checkpoint),T6SS,supportive
+tagT,IM ABC-like activator (envelope checkpoint),T6SS,supportive
+vasH,σ54-dependent transcriptional activator,T6SS,supportive
+rpoN,Sigma-54 (σ54) RNA polymerase factor,T6SS,supportive
+rpoS,General stress sigma factor (regulator),T6SS,supportive
+gacS,Sensor kinase (Gac/Rsm signaling),T6SS,supportive
+gacA,Response regulator (Gac/Rsm signaling),T6SS,supportive
+retS,Hybrid sensor regulator (represses H1-T6SS),T6SS,supportive
+ladS,Hybrid sensor regulator (activates H1-T6SS),T6SS,supportive
+rsmA,Global translational regulator (Rsm system),T6SS,supportive
+rsmY,sRNA activating T6SS via Rsm sequestration,T6SS,supportive
+rsmZ,sRNA activating T6SS via Rsm sequestration,T6SS,supportive
+hns,H-NS nucleoid protein (repressor),T6SS,supportive
+phoP,Response regulator (PhoPQ),T6SS,supportive
+phoQ,Sensor kinase (PhoPQ),T6SS,supportive
+ompR,Response regulator (EnvZ/OmpR),T6SS,supportive
+envZ,Sensor kinase (EnvZ/OmpR),T6SS,supportive
+fur,Ferric uptake regulator (links iron to T6SS),T6SS,supportive
+oxyR,Oxidative stress regulator (can affect T6SS),T6SS,supportive
+luxI,AHL synthase (quorum signal),T6SS,supportive
+luxR,Quorum-sensing regulator,T6SS,supportive
+luxO,Quorum regulator (Vibrio),T6SS,supportive
+luxU,Phosphotransfer protein (Vibrio QS),T6SS,supportive
+hapR,Master QS regulator (Vibrio),T6SS,supportive
+tfoX,Competence regulator influencing T6SS (Vibrio),T6SS,supportive
+qstR,Competence QS regulator (Vibrio),T6SS,supportive
+entA,Enterobactin biosynthesis enzyme (DHBA synthesis),Iron/Nutrient competition,supportive
+entB,Isochorismatase/aryl carrier protein,Iron/Nutrient competition,supportive
+entC,Isochorismate synthase,Iron/Nutrient competition,supportive
+entD,4'-phosphopantetheinyl transferase,Iron/Nutrient competition,supportive
+entE,Adenylation enzyme,Iron/Nutrient competition,supportive
+entF,NRPS condensation/thiolation enzyme,Iron/Nutrient competition,supportive
+entS,Enterobactin exporter (MFS),Iron/Nutrient competition,supportive
+fes,Enterobactin esterase (iron release),Iron/Nutrient competition,supportive
+fepA,TonB-dependent OM receptor (enterobactin),Iron/Nutrient competition,supportive
+fepB,Periplasmic binding protein (enterobactin),Iron/Nutrient competition,supportive
+fepC,ABC transporter ATPase (enterobactin),Iron/Nutrient competition,contextual
+fepD,ABC transporter permease (enterobactin),Iron/Nutrient competition,contextual
+fepG,ABC transporter permease (enterobactin),Iron/Nutrient competition,contextual
+cirA,Catecholate siderophore OM receptor,Iron/Nutrient competition,supportive
+fiu,Catecholate siderophore OM receptor,Iron/Nutrient competition,supportive
+fecA,Citrate-iron OM receptor (TonB-dependent),Iron/Nutrient competition,supportive
+fecI,ECF sigma factor (fec promoter activator),Iron/Nutrient competition,supportive
+fecR,Anti-sigma factor (fec signaling),Iron/Nutrient competition,supportive
+fecBCDE,Citrate-iron ABC transporter (permeases/ATPase),Iron/Nutrient competition,contextual
+iroB,Glycosyltransferase (salmochelin biosynthesis),Iron/Nutrient competition,supportive
+iroC,ABC exporter (salmochelin),Iron/Nutrient competition,core
+iroD,Esterase hydrolase (salmochelin),Iron/Nutrient competition,supportive
+iroE,Periplasmic esterase (salmochelin),Iron/Nutrient competition,supportive
+iroN,OM receptor (salmochelin),Iron/Nutrient competition,supportive
+iucA,Aerobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+iucB,Aerobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+iucC,Aerobactin synthetase,Iron/Nutrient competition,core
+iucD,Lysine monooxygenase (aerobactin),Iron/Nutrient competition,supportive
+iutA,OM receptor (aerobactin),Iron/Nutrient competition,supportive
+irp1,NRPS/PKS (yersiniabactin),Iron/Nutrient competition,supportive
+irp2,NRPS (yersiniabactin),Iron/Nutrient competition,supportive
+ybtS,Salicylate biosynthesis (yersiniabactin),Iron/Nutrient competition,supportive
+ybtE,Siderophore biosynthesis enzyme,Iron/Nutrient competition,supportive
+ybtP,ABC exporter permease,Iron/Nutrient competition,core
+ybtQ,ABC exporter ATPase,Iron/Nutrient competition,core
+ybtT,Thioesterase,Iron/Nutrient competition,supportive
+ybtU,Reductase,Iron/Nutrient competition,supportive
+ybtX,Inner membrane protein,Iron/Nutrient competition,supportive
+ybtA,AraC family transcriptional regulator,Iron/Nutrient competition,supportive
+fyuA,TonB-dependent receptor (yersiniabactin),Iron/Nutrient competition,supportive
+pvdA,L-ornithine N5-oxygenase (pyoverdine),Iron/Nutrient competition,supportive
+pvdD,NRPS module (pyoverdine),Iron/Nutrient competition,supportive
+pvdE,ABC transporter (pyoverdine),Iron/Nutrient competition,contextual
+pvdF,Biosynthesis enzyme (pyoverdine),Iron/Nutrient competition,supportive
+pvdH,Biosynthesis enzyme (pyoverdine),Iron/Nutrient competition,supportive
+pvdI,NRPS module (pyoverdine),Iron/Nutrient competition,supportive
+pvdJ,NRPS module (pyoverdine),Iron/Nutrient competition,supportive
+pvdL,NRPS/PKS hybrid (pyoverdine),Iron/Nutrient competition,supportive
+pvdN,Biosynthesis enzyme (pyoverdine),Iron/Nutrient competition,supportive
+pvdS,ECF sigma factor for pyoverdine genes,Iron/Nutrient competition,supportive
+fpvA,OM receptor (pyoverdine),Iron/Nutrient competition,supportive
+fpvB,Alternative OM receptor (pyoverdine),Iron/Nutrient competition,supportive
+pchA,DHB synthesis enzyme (pyochelin),Iron/Nutrient competition,supportive
+pchB,Isochorismate pyruvate lyase (pyochelin),Iron/Nutrient competition,supportive
+pchC,Biosynthesis enzyme (pyochelin),Iron/Nutrient competition,supportive
+pchD,NRPS adenylation enzyme (pyochelin),Iron/Nutrient competition,supportive
+pchE,NRPS condensation/thiolation (pyochelin),Iron/Nutrient competition,supportive
+pchF,NRPS condensation/thiolation (pyochelin),Iron/Nutrient competition,supportive
+pchG,Tailoring enzyme (pyochelin),Iron/Nutrient competition,supportive
+pchR,LysR-type regulator (pyochelin regulon),Iron/Nutrient competition,supportive
+fptA,OM receptor (pyochelin),Iron/Nutrient competition,supportive
+dhbA,Isochorismate synthase (bacillibactin),Iron/Nutrient competition,supportive
+dhbB,Isochorismatase (bacillibactin),Iron/Nutrient competition,supportive
+dhbC,DHB aryl carrier protein synthase,Iron/Nutrient competition,supportive
+dhbE,Adenylation enzyme (bacillibactin),Iron/Nutrient competition,supportive
+dhbF,NRPS synthetase (bacillibactin),Iron/Nutrient competition,core
+feuA,Periplasmic binding protein (bacillibactin uptake),Iron/Nutrient competition,supportive
+feuB,ABC permease (bacillibactin uptake),Iron/Nutrient competition,supportive
+feuC,ABC ATPase (bacillibactin uptake),Iron/Nutrient competition,supportive
+besA,Esterase (iron release from bacillibactin),Iron/Nutrient competition,supportive
+sfaA,Staphyloferrin A biosynthesis enzyme,Iron/Nutrient competition,supportive
+sfaB,Staphyloferrin A biosynthesis enzyme,Iron/Nutrient competition,supportive
+sfaC,Staphyloferrin A biosynthesis enzyme,Iron/Nutrient competition,supportive
+sfaD,Staphyloferrin A biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnA,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnB,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnC,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnD,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnE,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnF,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnG,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+sbnH,Staphyloferrin B biosynthesis enzyme,Iron/Nutrient competition,supportive
+fhuA,Ferrichrome OM receptor,Iron/Nutrient competition,supportive
+fhuB,Ferrichrome permease,Iron/Nutrient competition,supportive
+fhuC,Ferrichrome transporter ATPase,Iron/Nutrient competition,contextual
+fhuD,Ferrichrome periplasmic-binding protein,Iron/Nutrient competition,supportive
+sirA,Siderophore ABC substrate-binding (Staph),Iron/Nutrient competition,supportive
+sirB,Siderophore ABC permease (Staph),Iron/Nutrient competition,supportive
+sirC,Siderophore ABC ATPase (Staph),Iron/Nutrient competition,supportive
+sstA,Siderophore/thiazoline transporter permease (Staph),Iron/Nutrient competition,contextual
+sstB,Siderophore transporter permease (Staph),Iron/Nutrient competition,contextual
+sstC,Siderophore transporter ATPase (Staph),Iron/Nutrient competition,contextual
+sstD,Siderophore periplasmic-binding (Staph),Iron/Nutrient competition,supportive
+isdA,Heme surface protein (Isd system),Iron/Nutrient competition,supportive
+isdB,Heme receptor,Iron/Nutrient competition,supportive
+isdC,Heme relay protein,Iron/Nutrient competition,supportive
+isdD,Transport accessory (Isd),Iron/Nutrient competition,contextual
+isdE,Heme-binding lipoprotein,Iron/Nutrient competition,supportive
+isdF,Heme permease,Iron/Nutrient competition,supportive
+isdG,Heme oxygenase,Iron/Nutrient competition,supportive
+isdH,Haptoglobin-hemoglobin binding protein,Iron/Nutrient competition,supportive
+srtB,Sortase B (anchors Isd proteins),Iron/Nutrient competition,supportive
+tbpA,Transferrin-binding OM receptor,Iron/Nutrient competition,supportive
+tbpB,Transferrin-binding surface lipoprotein,Iron/Nutrient competition,supportive
+lbpA,Lactoferrin-binding OM receptor,Iron/Nutrient competition,supportive
+lbpB,Lactoferrin-binding surface lipoprotein,Iron/Nutrient competition,supportive
+hmbR,Hemoglobin receptor (OM),Iron/Nutrient competition,supportive
+hpuA,Hemoglobin-haptoglobin uptake lipoprotein,Iron/Nutrient competition,supportive
+hpuB,Hemoglobin-haptoglobin OM receptor,Iron/Nutrient competition,supportive
+vibA,Vibriobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vibB,Vibriobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vibC,Vibriobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vibD,Vibriobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vibE,Vibriobactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vibF,NRPS (vibriobactin),Iron/Nutrient competition,supportive
+viuA,Vibriobactin OM receptor,Iron/Nutrient competition,supportive
+vuuA,Vulnibactin OM receptor,Iron/Nutrient competition,supportive
+vbsA,Vulnibactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vbsB,Vulnibactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vbsC,Vulnibactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vbsD,Vulnibactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+vbsE,Vulnibactin biosynthesis enzyme,Iron/Nutrient competition,supportive
+desA,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+desB,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+desC,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+desD,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+desE,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+desF,Desferrioxamine biosynthesis enzyme,Iron/Nutrient competition,supportive
+foxA,Ferrioxamine OM receptor,Iron/Nutrient competition,supportive
+foxB,Ferrioxamine transport component,Iron/Nutrient competition,supportive
+foxC,Ferrioxamine transport component,Iron/Nutrient competition,supportive
+mbtA,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtB,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtC,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtD,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtE,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtF,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtG,Mycobactin siderophore biosynthesis,Iron/Nutrient competition,supportive
+mbtH,NRPS accessory protein,Iron/Nutrient competition,contextual
+irtA,ABC transporter (iron uptake),Iron/Nutrient competition,contextual
+irtB,ABC transporter (iron uptake),Iron/Nutrient competition,contextual
+chuA,Outer membrane heme receptor (E. coli),Iron/Nutrient competition,supportive
+chuS,Heme oxygenase (E. coli),Iron/Nutrient competition,supportive
+hmuR,Heme OM receptor,Iron/Nutrient competition,supportive
+hmuT,Periplasmic heme-binding protein,Iron/Nutrient competition,supportive
+hmuU,ABC permease (heme),Iron/Nutrient competition,supportive
+hmuV,ABC ATPase (heme),Iron/Nutrient competition,supportive
+hasA,Secreted hemophore (heme capture),Iron/Nutrient competition,supportive
+hasR,OM receptor for hemophore-heme complex,Iron/Nutrient competition,supportive
+feoA,Ferrous iron transporter accessory,Iron/Nutrient competition,contextual
+feoB,Ferrous iron transporter (GTPase permease),Iron/Nutrient competition,contextual
+feoC,Ferrous iron transporter regulator,Iron/Nutrient competition,supportive
+fur,Ferric uptake regulator (global iron regulator),Iron/Nutrient competition,supportive
+ryhB,sRNA controlling iron regulon (E. coli),Iron/Nutrient competition,supportive
+dps,Iron storage protein (DNA protection),Iron/Nutrient competition,supportive
+bfr,Bacterioferritin (iron storage),Iron/Nutrient competition,supportive
+bfd,Bacterioferritin-associated ferredoxin,Iron/Nutrient competition,supportive
+tonB,Energy transducer for OM receptors,Iron/Nutrient competition,supportive
+exbB,TonB energization complex subunit,Iron/Nutrient competition,supportive
+exbD,TonB energization complex subunit,Iron/Nutrient competition,supportive
+zur,Zinc uptake regulator,Iron/Nutrient competition,supportive
+znuA,Periplasmic Zn2+ binding protein,Iron/Nutrient competition,supportive
+znuB,Zn2+ transporter permease,Iron/Nutrient competition,contextual
+znuC,Zn2+ transporter ATPase,Iron/Nutrient competition,contextual
+zupT,Broad-spectrum divalent metal importer,Iron/Nutrient competition,supportive
+mntH,NRAMP family Mn2+ transporter,Iron/Nutrient competition,contextual
+mntA,Manganese ABC transporter ATPase,Iron/Nutrient competition,contextual
+mntB,Manganese ABC transporter permease,Iron/Nutrient competition,contextual
+mntC,Manganese periplasmic-binding protein,Iron/Nutrient competition,supportive
+sitA,Mn/Fe periplasmic-binding protein,Iron/Nutrient competition,supportive
+sitB,Mn/Fe permease,Iron/Nutrient competition,supportive
+sitC,Mn/Fe permease,Iron/Nutrient competition,supportive
+sitD,Mn/Fe ATPase,Iron/Nutrient competition,supportive
+nikA,Nickel ABC substrate-binding protein,Iron/Nutrient competition,supportive
+nikB,Nickel permease,Iron/Nutrient competition,supportive
+nikC,Nickel permease,Iron/Nutrient competition,supportive
+nikD,Nickel ATPase,Iron/Nutrient competition,supportive
+nikE,Nickel ATPase,Iron/Nutrient competition,supportive
+pstS,Phosphate-binding protein,Iron/Nutrient competition,supportive
+pstC,Phosphate transporter permease,Iron/Nutrient competition,contextual
+pstA,Phosphate transporter permease,Iron/Nutrient competition,contextual
+pstB,Phosphate transporter ATPase,Iron/Nutrient competition,contextual
+phoB,Response regulator for phosphate starvation,Iron/Nutrient competition,supportive
+phoR,Sensor kinase for phosphate starvation,Iron/Nutrient competition,supportive
+phoU,Phosphate regulon accessory protein,Iron/Nutrient competition,contextual
+cas1,CRISPR adaptation integrase subunit Cas1 (core),Phage/Immunity,core
+cas2,CRISPR adaptation endonuclease Cas2 (core),Phage/Immunity,core
+cas4,CRISPR adaptation nuclease Cas4,Phage/Immunity,supportive
+cas3,CRISPR helicase/nuclease (Type I),Phage/Immunity,supportive
+cse1,Cascade subunit (Type I-E; CasA),Phage/Immunity,supportive
+cse2,Cascade subunit (Type I-E; CasB),Phage/Immunity,supportive
+cas7,Cascade backbone (Type I),Phage/Immunity,core
+cas5e,Cascade small subunit (Type I-E),Phage/Immunity,supportive
+cas6e,crRNA processing endoribonuclease (Type I-E),Phage/Immunity,supportive
+csy1,Cascade-like subunit (Type I-F),Phage/Immunity,supportive
+csy2,Cascade-like subunit (Type I-F),Phage/Immunity,supportive
+csy3,Cascade-like subunit (Type I-F),Phage/Immunity,supportive
+csy4,RNase/processing (Type I-F),Phage/Immunity,supportive
+cas6f,crRNA processing endoribonuclease (Type I-F),Phage/Immunity,supportive
+cas8f,Large subunit (Type I-F),Phage/Immunity,supportive
+cas8c,Large subunit (Type I-C),Phage/Immunity,supportive
+cas5c,Cascade subunit (Type I-C),Phage/Immunity,supportive
+cas7c,Cascade subunit (Type I-C),Phage/Immunity,supportive
+cas9,RNA-guided DNase (Type II effector),Phage/Immunity,supportive
+csn2,Type II-A adaptation factor,Phage/Immunity,supportive
+tracrRNA,Trans-activating crRNA (non-coding RNA),Phage/Immunity,supportive
+rnc,RNase III (processes dual crRNA:tracrRNA),Phage/Immunity,supportive
+cas10,Type III effector polymerase,Phage/Immunity,supportive
+csm1,Type III-A complex subunit,Phage/Immunity,supportive
+csm2,Type III-A complex subunit,Phage/Immunity,supportive
+csm3,Type III-A RNase subunit,Phage/Immunity,supportive
+csm4,Type III-A complex subunit,Phage/Immunity,supportive
+csm5,Type III-A complex subunit,Phage/Immunity,supportive
+cmr1,Type III-B complex subunit,Phage/Immunity,supportive
+cmr2,Type III-B complex subunit,Phage/Immunity,supportive
+cmr3,Type III-B complex subunit,Phage/Immunity,supportive
+cmr4,Type III-B RNase,Phage/Immunity,supportive
+cas12a,Cpf1 endonuclease (Type V-A effector),Phage/Immunity,supportive
+cas12b,C2c1 endonuclease (Type V-B effector),Phage/Immunity,supportive
+cas12e,CasX endonuclease (Type V-E),Phage/Immunity,supportive
+cas12f,"Cas14 endonuclease (Type V-F, mini)",Phage/Immunity,supportive
+cas13a,Type VI RNase effector,Phage/Immunity,supportive
+cas13b,Type VI RNase effector,Phage/Immunity,supportive
+cas13d,Type VI-D RNase effector,Phage/Immunity,supportive
+leuO,CRISPR activator (counteracts H-NS),Phage/Immunity,supportive
+hns,CRISPR locus repressor,Phage/Immunity,supportive
+crp,Global regulator influencing CRISPR promoters,Phage/Immunity,supportive
+hsdR,Type I RM restriction subunit,Phage/Immunity,supportive
+hsdM,Type I RM methyltransferase subunit,Phage/Immunity,supportive
+hsdS,Type I RM specificity subunit,Phage/Immunity,supportive
+res,Type III RM restriction endonuclease (Res),Phage/Immunity,supportive
+mod,Type III RM methyltransferase (Mod),Phage/Immunity,supportive
+dam,DNA adenine methyltransferase (modification),Phage/Immunity,supportive
+dcm,DNA cytosine methyltransferase (modification),Phage/Immunity,supportive
+mcrA,Type IV REase (methylcytosine-specific),Phage/Immunity,supportive
+mcrB,Type IV REase GTPase subunit,Phage/Immunity,supportive
+mcrC,Type IV REase nuclease subunit,Phage/Immunity,supportive
+mrr,Type IV REase (5mC/6mA dependent),Phage/Immunity,supportive
+pglZ,BREX phosphatase-like core component,Phage/Immunity,core
+pglX,BREX DNA methyltransferase,Phage/Immunity,supportive
+brxC,BREX core ATPase (a.k.a. pglY),Phage/Immunity,core
+brxL,BREX Lon-like protease,Phage/Immunity,supportive
+brxA,BREX core component,Phage/Immunity,core
+brxB,BREX core component,Phage/Immunity,core
+drmA,DISARM helicase,Phage/Immunity,supportive
+drmB,DISARM nuclease,Phage/Immunity,supportive
+drmC,DISARM phospholipase-like protein,Phage/Immunity,supportive
+drmD,DISARM helicase/ATPase-like,Phage/Immunity,supportive
+drmE,DISARM accessory protein,Phage/Immunity,contextual
+cdnA,cGAS/DncV-like nucleotidyltransferase (CD-NTase),Phage/Immunity,supportive
+cap2,E1/E2-like ubiquitin-conjugating enzyme (CBASS),Phage/Immunity,supportive
+cap3,JAB/peptidase-like regulator (CBASS),Phage/Immunity,supportive
+capV,Phospholipase effector (CBASS),Phage/Immunity,supportive
+cap5,Effector/antitoxin-like (CBASS),Phage/Immunity,supportive
+thsA,Thoeris TIR-domain sensor,Phage/Immunity,supportive
+thsB,Thoeris NADase effector,Phage/Immunity,supportive
+gajA,Gabija ATP-dependent endonuclease,Phage/Immunity,supportive
+gajB,Gabija UvrD-like helicase/ATPase,Phage/Immunity,supportive
+zorA,Zorya membrane protein,Phage/Immunity,supportive
+zorB,Zorya accessory protein,Phage/Immunity,contextual
+lamA,Lamassu defense nuclease,Phage/Immunity,supportive
+lamB,Lamassu accessory protein,Phage/Immunity,contextual
+lamC,Lamassu accessory protein,Phage/Immunity,contextual
+shuA,Shedu defense nuclease,Phage/Immunity,supportive
+ago,Prokaryotic Argonaute (nucleic acid-guided defense),Phage/Immunity,supportive
+dndA,Cysteine desulfurase for DNA sulfur modification,Phage/Immunity,supportive
+dndB,DNA sulfur modification protein,Phage/Immunity,supportive
+dndC,ATP pyrophosphatase for DNA sulfur modification,Phage/Immunity,supportive
+dndD,DNA sulfur modification ATPase,Phage/Immunity,supportive
+dndE,DNA sulfur modification protein,Phage/Immunity,supportive
+dndF,Restriction component recognizing PT-DNA,Phage/Immunity,supportive
+dndG,Restriction nuclease (PT-dependent),Phage/Immunity,supportive
+dndH,Restriction component (PT-dependent),Phage/Immunity,supportive
+abiA,Abortive infection protein A,Phage/Immunity,supportive
+abiB,Abortive infection protein B,Phage/Immunity,supportive
+abiD,Abortive infection protein D,Phage/Immunity,supportive
+abiE,Abortive infection toxin–antitoxin system (toxin),Phage/Immunity,supportive
+abiEi,Abortive infection antitoxin (AbiE immunity),Phage/Immunity,core
+abiF,Abortive infection protein F,Phage/Immunity,supportive
+abiG,Abortive infection protein G,Phage/Immunity,supportive
+abiH,Abortive infection protein H,Phage/Immunity,supportive
+abiI,Abortive infection protein I,Phage/Immunity,supportive
+abiK,Abortive infection protein K (polymerase-like),Phage/Immunity,supportive
+abiL,Abortive infection protein L,Phage/Immunity,supportive
+abiN,Abortive infection protein N,Phage/Immunity,supportive
+abiO,Abortive infection protein O,Phage/Immunity,supportive
+abiP,Abortive infection protein P,Phage/Immunity,supportive
+abiQ,Abortive infection protein Q (toxin),Phage/Immunity,supportive
+abiR,Abortive infection regulator,Phage/Immunity,supportive
+abiT,Abortive infection protein T,Phage/Immunity,supportive
+rexA,Prophage-encoded exclusion (Rex) membrane protein,Phage/Immunity,supportive
+rexB,Prophage-encoded exclusion (Rex) membrane protein,Phage/Immunity,supportive
+pifA,Phage inhibition protein A,Phage/Immunity,supportive
+lit,tRNA^Lys-specific anticodon nuclease (phage defense),Phage/Immunity,supportive
+prrC,tRNA anticodon nuclease (defense),Phage/Immunity,supportive
+rloC,tRNA anticodon nuclease (defense),Phage/Immunity,supportive
+mazE,Antitoxin (MazEF TA system),Phage/Immunity,supportive
+mazF,mRNA interferase toxin (MazEF),Phage/Immunity,supportive
+relB,Antitoxin (RelBE TA system),Phage/Immunity,supportive
+relE,mRNA interferase toxin (RelBE),Phage/Immunity,supportive
+vapB,Antitoxin (VapBC TA system),Phage/Immunity,supportive
+vapC,PIN-domain RNase toxin (VapBC),Phage/Immunity,supportive
+hipA,Ser/Thr kinase toxin (HipBA),Phage/Immunity,supportive
+hipB,Antitoxin (HipBA),Phage/Immunity,supportive
+mqsA,Antitoxin (MqsRA),Phage/Immunity,supportive
+mqsR,RNase toxin (MqsRA),Phage/Immunity,supportive
+ccdA,Antitoxin (CcdAB),Phage/Immunity,supportive
+ccdB,DNA gyrase poison (CcdAB),Phage/Immunity,supportive
+parD,Antitoxin (ParDE),Phage/Immunity,supportive
+parE,Toxin (ParDE),Phage/Immunity,supportive
+hok,Small toxic membrane peptide (Hok/Sok),Phage/Immunity,supportive
+sok,Antisense RNA antitoxin (Hok/Sok),Phage/Immunity,supportive
+phd,Antitoxin (Phd/Doc),Phage/Immunity,supportive
+doc,Toxin (Phd/Doc),Phage/Immunity,supportive
+hicA,Toxin (HicAB),Phage/Immunity,supportive
+hicB,Antitoxin (HicAB),Phage/Immunity,supportive
+yoeB,Toxin (YefM/YoeB),Phage/Immunity,supportive
+yefM,Antitoxin (YefM/YoeB),Phage/Immunity,supportive
+toxN,Endoribonuclease toxin (ToxIN),Phage/Immunity,supportive
+toxI,Antitoxin RNA (ToxIN),Phage/Immunity,supportive
+rnlA,RNase LS toxin (RnlAB),Phage/Immunity,supportive
+rnlB,Antitoxin (RnlAB),Phage/Immunity,supportive
+msr,Retron msDNA RNA component,Phage/Immunity,supportive
+msd,Retron msDNA DNA component,Phage/Immunity,supportive
+rrtT,Reverse transcriptase (retron),Phage/Immunity,supportive
+rcaT,Retron-controlled abortive infection toxin,Phage/Immunity,supportive
+sieA,Superinfection exclusion protein A,Phage/Immunity,supportive
+sieB,Superinfection exclusion protein B,Phage/Immunity,supportive
+cI,Prophage immunity repressor (lambda-like),Phage/Immunity,core
+cro,Prophage switch regulator (lambda-like),Phage/Immunity,supportive

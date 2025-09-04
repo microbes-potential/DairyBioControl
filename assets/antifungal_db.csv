@@ -1,0 +1,61 @@
+Gene,Product,Category,Tier
+ituD,Malonyl-CoA transacylase (initiates iturin biosynthesis),Lipopeptides,core
+ituA,Non-ribosomal peptide synthetase (NRPS) core assembly,Lipopeptides,core
+ituB,NRPS elongation module (iturin),Lipopeptides,core
+ituC,NRPS cyclization module (iturin),Lipopeptides,core
+fenA,"NRPS, fengycin peptide backbone",Lipopeptides,core
+fenB,"NRPS, elongation module",Lipopeptides,core
+fenC,"NRPS, elongation/cyclization",Lipopeptides,core
+fenD,"NRPS, fengycin cyclization",Lipopeptides,core
+bmyD,"NRPS, bacillomycin biosynthesis",Lipopeptides,core
+srfAA,Surfactin synthetase NRPS module,Lipopeptides,core
+srfAB,Surfactin synthetase NRPS module,Lipopeptides,core
+srfAC,Surfactin synthetase NRPS module,Lipopeptides,core
+srfAD,Thioesterase/termination module (surfactin),Lipopeptides,core
+sfp,4′-phosphopantetheinyl transferase (activates NRPS),Lipopeptides,core
+yerP,ABC transporter (lipopeptide export),Lipopeptides,supportive
+comA,Two-component regulator (surfactin operon),Lipopeptides,contextual
+comP,Sensor kinase (surfactin operon),Lipopeptides,contextual
+degQ,Regulator of lipopeptide expression,Lipopeptides,contextual
+degU,Response regulator of lipopeptide expression,Lipopeptides,contextual
+chiA,Endochitinase,Chitinase/Glucanase,core
+chiB,Endochitinase,Chitinase/Glucanase,core
+chiC,Endochitinase,Chitinase/Glucanase,core
+nagA,N-acetylglucosaminidase,Chitinase/Glucanase,core
+nagB,Glucosamine-6-phosphate deaminase,Chitinase/Glucanase,core
+ech42,Endochitinase from Trichoderma,Chitinase/Glucanase,core
+lamA,"β-1,3-glucanase (laminarinase)",Chitinase/Glucanase,core
+bgn13.1,"β-1,3-glucanase",Chitinase/Glucanase,core
+bgn16.1,"β-1,6-glucanase",Chitinase/Glucanase,core
+xlnR,Zn2Cys6 transcription factor (chitinase/glucanase regulator),Chitinase/Glucanase,core
+clr1,Transcriptional regulator of cellulase/chitinase,Chitinase/Glucanase,core
+clr2,Transcriptional regulator of cellulase/chitinase,Chitinase/Glucanase,core
+creA,Carbon catabolite repressor (negative regulator),Chitinase/Glucanase,contextual
+abcC1,ABC transporter (secretion of chitinases),Chitinase/Glucanase,core
+sidA,L-ornithine N5-oxygenase (first committed step),Siderophores,core
+sidC,"NRPS, ferricrocin synthetase",Siderophores,core
+sidD,"NRPS, fusarinine C synthetase",Siderophores,core
+sidF,Hydroxamate synthetase,Siderophores,core
+sidG,Acyl-CoA-dependent acyltransferase,Siderophores,core
+mirB,MFS transporter (siderophore uptake),Siderophores,supportive
+mirC,MFS transporter (siderophore uptake),Siderophores,supportive
+sit1,Siderophore-iron transporter,Siderophores,supportive
+sit2,Siderophore-iron transporter,Siderophores,supportive
+hapX,Transcriptional regulator (iron starvation response),Siderophores,contextual
+sreA,GATA-type repressor (iron homeostasis),Siderophores,contextual
+abcI3,ABC transporter (siderophore export),Siderophores,supportive
+alsS,Acetolactate synthase (acetoin precursor),Volatiles,core
+alsD,Acetolactate decarboxylase (acetoin synthesis),Volatiles,core
+budC,"2,3-butanediol dehydrogenase",Volatiles,core
+bdhA,"2,3-butanediol dehydrogenase isoenzyme",Volatiles,core
+bdhB,"2,3-butanediol dehydrogenase isoenzyme",Volatiles,core
+adh1,Alcohol dehydrogenase,Volatiles,core
+adh2,Alcohol dehydrogenase,Volatiles,core
+adhE,"Alcohol dehydrogenase (fusels, ethanol)",Volatiles,core
+ilvBN,Acetohydroxyacid synthase (branched-chain VOC precursor),Volatiles,core
+catA,"Catechol 1,2-dioxygenase (aromatic VOCs)",Volatiles,core
+catB,"Catechol 2,3-dioxygenase (aromatic VOCs)",Volatiles,core
+regA,Transcriptional regulator (VOCs),Volatiles,contextual
+regB,Transcriptional regulator (VOCs),Volatiles,contextual
+acrA,Efflux transporter for VOC secretion,Volatiles,supportive
+acrB,Efflux transporter for VOC secretion,Volatiles,supportive
