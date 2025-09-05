@@ -1,11 +1,13 @@
+# pages/results.py
 from __future__ import annotations
 import math
 import pandas as pd
 from dash import dcc, html, Input, Output, State
 from dash.dash_table import DataTable
+import plotly.graph_objects as go  # for the dial
 
 from utils.perf import cached_build_detection
-from utils.trait_db import get_module_ref_cap  # << NEW realistic denominator
+from utils.trait_db import get_module_ref_cap  # realistic denominator
 
 _CARD = {"background":"#fff", "border":"1px solid #e9eef5", "borderRadius":"12px",
          "padding":"16px", "boxShadow":"0 2px 8px rgba(0,0,0,0.04)"}
@@ -13,45 +15,77 @@ _CARD = {"background":"#fff", "border":"1px solid #e9eef5", "borderRadius":"12px
 def _heading(txt:str):
     return html.H3(txt, style={"margin":"0 0 12px","fontWeight":"800"})
 
+def _empty_bar_figure():
+    return {"data":[], "layout":{"height":280, "margin":{"l":40,"r":10,"t":10,"b":40}}}
+
+def _dial_figure(score: float) -> go.Figure:
+    s = max(0.0, min(100.0, float(score)))
+    fig = go.Figure(
+        go.Indicator(
+            mode="gauge+number",
+            value=s,
+            number={"suffix":" / 100", "font":{"size":32}},
+            title={"text":"Genome Suitability (0–100)", "font":{"size":20}},
+            gauge={
+                "axis": {"range":[0,100], "tickwidth":1, "tickcolor":"#b8c1d1"},
+                "bar": {"color":"#3c7df0"},
+                "bgcolor": "white",
+                "borderwidth": 1,
+                "bordercolor": "#e6eef7",
+                "steps": [
+                    {"range":[0,30],  "color":"#ffe5e5"},
+                    {"range":[30,60], "color":"#fff6d9"},
+                    {"range":[60,100],"color":"#e8f7e9"},
+                ],
+                "threshold": {
+                    "line": {"color": "#2f5bd2", "width": 4},
+                    "thickness": 0.8,
+                    "value": s
+                },
+            },
+            domain={"x":[0,1], "y":[0,1]},
+        )
+    )
+    fig.update_layout(
+        margin=dict(l=20, r=20, t=30, b=20),
+        paper_bgcolor="white",
+        height=380,   # <-- bigger dial
+    )
+    return fig
+
 def page_results():
     return html.Div([
         html.Div([
             _heading("DairyBioControl — Summary"),
             html.Div(id="results-notice", style={"color":"#a33","marginBottom":"8px"}),
 
-            html.Div([
-                html.Div([
-                    _heading("Biocontrol Potential"),
-                    DataTable(
-                        id="indices-table",
-                        columns=[{"name":"Metric","id":"Metric"},
-                                 {"name":"Score","id":"Score"}],
-                        data=[],
-                        style_table={"overflowX":"auto"},
-                        style_cell={"fontSize":"16px","padding":"10px"},
-                        style_header={"background":"#f5f7fb","fontWeight":"700"},
-                        style_data_conditional=[
-                            {"if":{"filter_query":"{Metric} = 'Biocontrol Potential (0–100)'"}, "backgroundColor":"#f6fff7"},
-                        ]
-                    ),
-                ], style={"flex":"1"}),
+            # TOP: Big dial
+            dcc.Loading(
+                id="loading-results-dial",
+                type="circle",
+                color="#8aa7ff",
+                children=html.Div([
+                    _heading("Genome Suitability"),
+                    dcc.Graph(id="biocontrol-dial", config={"displayModeBar":False}, figure=_dial_figure(0.0))
+                ], style={"minWidth":"320px"}),
+            ),
 
-                dcc.Loading(
-                    id="loading-results-bars",
-                    type="circle",
-                    color="#8aa7ff",
-                    children=html.Div([
-                        _heading("Weighted hits"),
-                        dcc.Graph(id="benefit-bars", config={"displayModeBar":False}, figure={})
-                    ], style={"flex":"1","minWidth":"340px"}),
-                ),
-            ], style={"display":"grid","gridTemplateColumns":"1fr 1fr","gap":"16px"}),
+            # BOTTOM: Weighted hits bars
+            dcc.Loading(
+                id="loading-results-bars",
+                type="circle",
+                color="#8aa7ff",
+                children=html.Div([
+                    _heading("Weighted hits"),
+                    dcc.Graph(id="benefit-bars", config={"displayModeBar":False}, figure={})
+                ], style={"minWidth":"340px", "marginTop":"12px"}),
+            ),
         ], style=_CARD),
     ], style={"padding":"16px 18px"})
 
 def register_callbacks(app):
     @app.callback(
-        Output("indices-table","data"),
+        Output("biocontrol-dial","figure"),
         Output("benefit-bars","figure"),
         Output("results-notice","children"),
         Input("store-features","data"),
@@ -63,7 +97,7 @@ def register_callbacks(app):
         genome = fname or "query"
 
         if not feats:
-            return [], {"data":[], "layout":{"height":280, "margin":{"l":40,"r":10,"t":10,"b":40}}}, ""
+            return _dial_figure(0.0), _empty_bar_figure(), ""
 
         # benefit modules (weighted) — cached
         d_sum, d_hits = cached_build_detection("DairyAdaptation", feats, genome)
@@ -84,11 +118,11 @@ def register_callbacks(app):
             ta_n  = int(grp.get("Toxin-Antitoxin", 0))
 
         # Risk indices
-        PPRS = (arg_n**2 + vf_n**2 + ta_n**2) ** 0.5
+        PPRS  = (arg_n**2 + vf_n**2 + ta_n**2) ** 0.5
         gamma = 0.5  # gentler penalty
-        PPRI = PPRS / (1.0 + PPRS)
+        PPRI  = PPRS / (1.0 + PPRS)
 
-        # Realistic reference cap: sum of top-K gene weights in each module DB
+        # Realistic reference cap
         ref_cap = (
             get_module_ref_cap("DairyAdaptation", 40) +
             get_module_ref_cap("Antibacterial",  30) +
@@ -96,24 +130,25 @@ def register_callbacks(app):
         )
         ref_cap = max(ref_cap, 1e-9)
 
-        benefit_w = S_Dairy_w + S_Abx_w + S_Af_w
+        benefit_w    = S_Dairy_w + S_Abx_w + S_Af_w
         norm_benefit = benefit_w / ref_cap
-        biocontrol = 100.0 * norm_benefit / (1.0 + gamma*PPRI)
-        biocontrol = max(0.0, min(100.0, biocontrol))
+        biocontrol   = 100.0 * norm_benefit / (1.0 + gamma * PPRI)
+        biocontrol   = max(0.0, min(100.0, biocontrol))
 
-        indices_rows = [{"Metric":"Biocontrol Potential (0–100)", "Score": f"{biocontrol:.2f}"}]
+        # Build dial
+        dial_fig = _dial_figure(biocontrol)
 
         # Weighted hits bar chart (unchanged structure)
         bars_df = pd.DataFrame({
             "Module": ["Adaptation","Antibacterial","Antifungal"],
             "Weighted hits":  [S_Dairy_w, S_Abx_w, S_Af_w]
         })
-        fig = {
+        bars_fig = {
             "data":[{"type":"bar","x":bars_df["Module"],"y":bars_df["Weighted hits"],"name":"Weighted hits"}],
-            "layout":{"height":280,"margin":{"l":50,"r":10,"t":10,"b":40},"yaxis":{"title":"Weighted hits"}}
+            "layout":{"height":300,"margin":{"l":50,"r":10,"t":10,"b":40},"yaxis":{"title":"Weighted hits"}}
         }
 
         note = "" if (benefit_w + arg_n + vf_n + ta_n) > 0 else \
                "No traits matched. Check gene/product names or upload an annotated GenBank/FASTA."
-        return indices_rows, fig, note
 
+        return dial_fig, bars_fig, note
