@@ -152,12 +152,12 @@ B) Per-module benefit (sum of all traits in the module)
 
 C) Safety penalty (from the Safety module)
   PRS = √( ARGs^2 + VFs^2 + TAs^2 )
-  PRI = PPRS / (1 + PPRS)        
+  PRI = PRS / (1 + PRS)        
 
 D) Composite Biocontrol Potential (0..100)
   benefit   = S_Dairy + S_Antibacterial + S_Antifungal
   capacity  = C  (curated maximum possible benefit if everything were present)
-  Biocontrol% = 100 × (benefit / capacity) ÷ (1 + γ·PPRI)
+  Biocontrol% = 100 × (benefit / capacity) ÷ (1 + γ·PRI)
                         """.strip("\n"),
                         style={
                             "background": "#f3f7ff",
