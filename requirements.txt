@@ -1,7 +1,12 @@
+pip>=25
+setuptools>=70
+wheel
+
+numpy>=2.0,<3
+pandas==2.2.3
+
 dash==2.17.1
 plotly==5.22.0
-pandas==2.2.2
-numpy==1.26.4
 python-dotenv==1.0.1
 itsdangerous==2.2.0
 gunicorn==21.2.0
