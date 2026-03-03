@@ -9,7 +9,7 @@ sidebar_style = {
 content_style = {"margin-left": "300px", "margin-right": "20px", "padding": "20px 30px"}
 
 tabs = [
-    "Home","Documentation","Upload","Safety Screening",
+    "Home","Documentation","Login","Upload","Safety Screening",
     "Dairy Adaptation","Antibacterial","Antifungal","Results",
     "About Us","Contact","Cite"
 ]
@@ -32,7 +32,7 @@ def sidebar():
         dcc.Store(id="store-email", data=""),
         dcc.Store(id="store-filename", data=""),
         dcc.Store(id="store-filekind", data=""),
-        dcc.Store(id="store-auth", data={"logged_in": True, "approved": True, "email": "", "name": "", "role": "user"}),
+        dcc.Store(id="store-auth", data={"logged_in": False, "approved": False, "email": "", "name": "", "role": "user"}),
         dcc.Store(id="store-progress", data=0),
         dcc.Interval(id="progress-interval", interval=180, n_intervals=0, disabled=True),
     ], style=sidebar_style)
