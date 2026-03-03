@@ -72,7 +72,7 @@ def page_home():
                 ),
                 html.Hr(style={"margin": "30px 0"}),
                 html.P(
-                    "Developed by LaPointes Research Group, University of Guelph. ",
+                    "Developed by LaPointe Research Group, University of Guelph. ",
                     
                     style={"fontSize": "18px", "fontStyle": "italic"},
                 ),
