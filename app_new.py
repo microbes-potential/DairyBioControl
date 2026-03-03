@@ -14,7 +14,6 @@ from utils.trait_db import load_trait_db
 
 from pages.home import page_home
 from pages.documentation import page_documentation
-from pages.login import register_callbacks as login_callbacks, page_login
 from pages.upload import register_callbacks as upload_callbacks, page_upload
 from pages.module_safety import register_callbacks as safety_callbacks, page_module as page_safety
 from pages.module_dairy import register_callbacks as dairy_callbacks, page_module as page_dairy
@@ -109,6 +108,7 @@ def health():
 # These are referenced by module/result callbacks. Keeping them here
 # avoids “nonexistent object” errors when navigating off the upload page.
 _global_stores = html.Div([
+    dcc.Store(id="store-auth", data={"logged_in": True, "approved": True, "email": "", "name": "", "role": "user"}),
     dcc.Store(id="store-features"),
     dcc.Store(id="store-filename"),
     dcc.Store(id="store-filekind"),
@@ -133,7 +133,7 @@ def render_page_content(pathname):
     page = (pathname or "/").strip("/").lower()
     if page in ("", "home"): return page_home()
     if page == "documentation": return page_documentation()
-    if page == "login": return page_login()
+    if page == "login": return page_home()  # login disabled
     if page == "upload": return page_upload()
     if page == "safetyscreening": return page_safety()
     if page == "dairyadaptation": return page_dairy()
@@ -146,7 +146,6 @@ def render_page_content(pathname):
     return html.Div([html.H2("🔍 Page not found")], style={"padding": "30px"})
 
 # ------------------ Register all callbacks ------------------
-login_callbacks(app)
 upload_callbacks(app)
 safety_callbacks(app)
 dairy_callbacks(app)

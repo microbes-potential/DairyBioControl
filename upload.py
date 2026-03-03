@@ -3,7 +3,6 @@ from __future__ import annotations
 import hashlib
 
 from dash import dcc, html, Input, Output, State, no_update
-from components.common import info_banner
 from utils.parsing import (
     parse_contents, is_genbank, is_protein_fasta,
     detect_annotator_from_text, parse_genbank_features, parse_protein_fasta_features
@@ -26,8 +25,7 @@ def page_upload():
     return html.Div([
         html.Div([
             html.H3("Upload GenBank (PROKKA/PGAP) or Protein FASTA (.faa)"),
-            info_banner("You must be logged in and approved to upload."),
-            html.Div([
+                        html.Div([
                 html.Label("E-mail (optional, for results)"),
                 dcc.Input(id="email-input", type="email",
                           placeholder="your.email@example.com",
@@ -131,15 +129,10 @@ def register_callbacks(app):
                   Input("upload-data","contents"),
                   State("upload-data","filename"),
                   State("email-input","value"),
-                  State("store-auth","data"),
                   prevent_initial_call=True)
-    def handle_upload(contents, filename, email_value, auth):
+    def handle_upload(contents, filename, email_value):
         if not contents or not filename:
             return "", "idle", [], email_value or "", filename or "", ""
-        if not (auth or {}).get("logged_in"):
-            return "❌ Please sign in first.", "idle", [], email_value or "", filename, ""
-        if not (auth or {}).get("approved"):
-            return "❌ Your account is pending admin approval.", "idle", [], email_value or "", filename, ""
 
         text = parse_contents(contents)
         fname = (filename or "").lower()
