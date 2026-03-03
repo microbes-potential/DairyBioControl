@@ -80,7 +80,7 @@ def page_documentation():
 
             html.Div([
                 _h3("3.2 Dairy Adaptation"),
-                _p("Detects dairy-relevant physiology and probiotic-like features, e.g.:"),
+                _p("Detects dairy-relevant physiology and beneficial characteristics for use as a probiotic, e.g.:"),
                 html.Ul([
                     html.Li("Acid, cold and salt tolerance; lactose metabolism"),
                     html.Li("Proteolysis & lipolysis; adhesion, EPS and biofilm components"),
